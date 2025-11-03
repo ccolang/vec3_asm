@@ -35,9 +35,9 @@ vec3_sub:
     subss xmm1, [rdx+4]     ; a.y - b.y
     subss xmm2, [rdx+8]     ; a.z - b.z
     
-    movss [rdi], xmm0       ; Store result.x
-    movss [rdi+4], xmm1     ; Store result.y
-    movss [rdi+8], xmm2     ; Store result.z
+    movss [rdi], xmm0       
+    movss [rdi+4], xmm1    
+    movss [rdi+8], xmm2   
     ret
 
 vec3_mul_scalar:
@@ -226,4 +226,5 @@ vec3_reflect:
     pop rbx
 
     ret
+
 
